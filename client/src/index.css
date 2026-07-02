@@ -70,3 +70,27 @@
 .profile-success{color:#76e99b;text-align:center;margin-bottom:0}
 @media(max-width:900px){.profile-layout{grid-template-columns:1fr}.profile-preview{position:static}}
 @media(max-width:650px){.profile-form-row,.profile-stats{grid-template-columns:1fr}}
+
+/* Delete post styles - paste at the bottom of client/src/index.css */
+
+.post-actions{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.btn.danger{
+  background:rgba(239,68,68,.14);
+  border:1px solid rgba(239,68,68,.35);
+  color:#ff9b9b;
+}
+
+.owner-label{
+  display:inline-block;
+  margin-top:10px;
+  padding:5px 8px;
+  border-radius:999px;
+  background:rgba(124,58,237,.16);
+  color:#cbbcff;
+  font-size:11px;
+}
