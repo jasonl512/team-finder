@@ -94,3 +94,107 @@
   color:#cbbcff;
   font-size:11px;
 }
+
+/* Multi-select player search styles - paste at the bottom of client/src/index.css */
+
+.filter-heading-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.filter-heading-row h3{ margin:0; }
+
+.filter-clear-button{
+  border:none;
+  background:transparent;
+  color:#bbaeff;
+  padding:4px;
+  font-weight:700;
+}
+
+.game-checkbox-list{
+  display:grid;
+  gap:7px;
+  max-height:220px;
+  overflow:auto;
+  padding:10px;
+  margin-top:8px;
+  border:1px solid #2a3565;
+  border-radius:10px;
+  background:#0d142c;
+}
+
+.game-checkbox-row{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  margin:0;
+  padding:7px 8px;
+  border-radius:8px;
+  color:#e5e9ff;
+  cursor:pointer;
+}
+
+.game-checkbox-row:hover{ background:#151f42; }
+
+.game-checkbox-row input{
+  width:auto;
+  accent-color:#7c3aed;
+}
+
+.selected-filter-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-top:10px;
+}
+
+.selected-filter-tags button{
+  border:1px solid rgba(124,58,237,.35);
+  border-radius:999px;
+  background:rgba(124,58,237,.14);
+  color:#d3c8ff;
+  padding:5px 9px;
+  font-size:11px;
+}
+
+.no-filter-results{
+  color:var(--muted);
+  font-size:13px;
+  margin:3px;
+}
+
+.empty-player-results{
+  text-align:center;
+  padding:55px 20px;
+}
+
+.empty-player-results p{ color:var(--muted); }
+
+/* Custom scrollbar for game filter */
+.game-checkbox-list {
+  scrollbar-width: thin;
+  scrollbar-color: #59648f #0d142c;
+}
+
+/* Chrome / Edge / Safari */
+.game-checkbox-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.game-checkbox-list::-webkit-scrollbar-track {
+  background: #0d142c;
+  border-radius: 10px;
+}
+
+.game-checkbox-list::-webkit-scrollbar-thumb {
+  background: #59648f;
+  border-radius: 10px;
+  border: 2px solid #0d142c;
+}
+
+.game-checkbox-list::-webkit-scrollbar-thumb:hover {
+  background: #7c6ee6;
+}
