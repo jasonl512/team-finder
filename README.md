@@ -15,6 +15,7 @@ npm run dev
 Backend:
 ```bash
 cd server
+createdb team_finder
 npm install
 npm run dev
 ```
